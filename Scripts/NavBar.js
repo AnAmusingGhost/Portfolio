@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('nav-placeholder').innerHTML = createNavigation();
+    
+    setActiveNavLink();
+    
+    setupHamburgerMenu();
+});
+
+function createNavigation() {
+    return `
+    <nav class="nav-container">
+        <div class="name-container">
+            <h2 class=>C.F</h2>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="links-container">
+            <a href="Index.html" class="nav-link">Home</a>
+            <a href="Resume.html" class="nav-link">Resume</a>
+            <a href="About.html" class="nav-link">About Me</a>
+        </div>
+    </nav>
+    `;
+}
