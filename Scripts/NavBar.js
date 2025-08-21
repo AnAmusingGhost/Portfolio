@@ -25,3 +25,23 @@ function createNavigation() {
     </nav>
     `;
 }
+
+function setActiveNavlink(){
+    const currentPage = window.location.pathname.split('/').pop() || 'Index.html';
+    
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
+
+
