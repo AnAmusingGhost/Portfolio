@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 70px;   
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.name-container{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+
+.links-container{
+    display:flex;
+    gap:30px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 0; 
+    position: relative; 
+    transition: all 0.3s ease; 
+}
+
+
+/* Hover effect - fix color later */
+.nav-link.active {
+    font-weight: bold;
+    background-color: transparent; 
+    color: #6366F1; 
+}
+
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 3px;
+    background-color: #6366F1; /* Purple underline fix later*/
+    border-radius: 3px 3px 0 0;
+}
+
+
+
+.nav-link:hover:not(.active) {
+    background-color: transparent; /* Removed hover background */
+    color: #6366F1; /* Consistent hover color - fiz color later */
+}
+
+.nav-link:hover:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    height: 2px; /* Slightly thinner than active */
+    background-color: #e6e4f9; /* Lighter purple for hover  - fix color later */
+    border-radius: 3px 3px 0 0;
+}
