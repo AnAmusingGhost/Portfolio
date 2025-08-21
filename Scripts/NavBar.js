@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('nav-placeholder').innerHTML = createNavigation();
-    
     setActiveNavLink();
-    
     setupHamburgerMenu();
 });
+
 
 function createNavigation() {
     return `
@@ -51,6 +50,7 @@ function setupHamburgerMenu() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
+
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
