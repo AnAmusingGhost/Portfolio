@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('nav-placeholder').innerHTML = createNavigation();
+    
     setActiveNavLink();
+    
     setupHamburgerMenu();
 });
-
 
 function createNavigation() {
     return `
     <nav class="nav-container">
         <div class="name-container">
-            <h2 class=>C.F</h2>
+            <h2>C.F</h2>
         </div>
         <div class="hamburger">
             <span class="bar"></span>
@@ -25,15 +26,13 @@ function createNavigation() {
     `;
 }
 
-function setActiveNavlink(){
+function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'Index.html';
-    
     const navLinks = document.querySelectorAll('.nav-link');
-
+    
     navLinks.forEach(link => {
         link.classList.remove('active');
     });
-
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href');
         if (linkPage === currentPage) {
@@ -45,13 +44,12 @@ function setActiveNavlink(){
 function setupHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.links-container');
-
+    
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
-
-
+    
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
