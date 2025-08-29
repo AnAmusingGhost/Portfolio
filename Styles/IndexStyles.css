@@ -106,3 +106,55 @@
     font-weight: 700;
     font-style: italic;
 }
+
+.profile-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.profile-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: block;
+    margin: 0 auto;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.name {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 560px;
+    color: #333;
+}
