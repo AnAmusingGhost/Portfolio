@@ -144,14 +144,12 @@
     margin-bottom: 0.5rem;
     color: #555;
 }
-
 .name {
     font-size: 2.8rem;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
 .bio {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -350,7 +348,6 @@
     opacity: 1;
     transform: translateY(0);
 }
-
 @media (max-width: 768px) {
     .projects-section {
         margin-bottom: 4rem;
@@ -392,3 +389,4 @@
         max-width: 100%;
     }
 }
+
