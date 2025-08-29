@@ -18,9 +18,9 @@ function createNavigation() {
             <span class="bar"></span>
         </div>
         <div class="links-container">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="resume.html" class="nav-link">Resume</a>
-            <a href="about.html" class="nav-link">About Me</a>
+            <a href="Index.html" class="nav-link">Home</a>
+            <a href="Resume.html" class="nav-link">Resume</a>
+            <a href="About.html" class="nav-link">About Me</a>
         </div>
     </nav>
     `;
