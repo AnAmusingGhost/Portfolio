@@ -158,3 +158,22 @@
     max-width: 560px;
     color: #333;
 }
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: center; 
+        padding: 3rem 1.5rem;
+    }
+    
+    .profile-image {
+        width: 220px; 
+        height: 220px;
+    }
+    
+    .profile-text {
+        text-align: left;
+        margin-top: 2rem;
+    }
+}
